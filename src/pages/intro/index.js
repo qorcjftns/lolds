@@ -5,7 +5,9 @@ class Intro extends Component {
 
     render() {
         return (
-            <div className="test">App</div>
+            <div className="page Intro-page">
+                <h2>League of Legends Damage Simulator</h2>
+            </div>
         );
     }
 

@@ -26,10 +26,30 @@ html,body, #root {
 }
 
 .App-header {
-	width: 200px;
+	min-width: 200px;
+	max-width: 200px;
 
-	background-color: #161a22;
+	background-color: #0c1927;
 	color: white;
+}
+
+.App-header button {
+	width: 100%;
+	height: 50px;
+	
+	border: 1px solid #27441d;
+
+	background-color: #33592d;
+	color: #a29e91;
+	
+	font-size: 24px;
+}
+
+.App-header button:hover {
+	background-color: #25401b;
+	color: #eee6d4;
+	
+	cursor: pointer;
 }
 
 .App-header h1 {
@@ -39,12 +59,26 @@ html,body, #root {
 .App-header h3 {
 	margin-top: 0;
 	font-size: 1.2rem;
+	color: #cbbe96;
 }
 
 .App-footer {
 	width: 100%;
-	height: 100px;
+	min-height: 100px;
+	max-height: 100px;
 
-	background-color: #282c34;
+	background-color: #161a22;
 
+}
+
+.page {
+	background-color: #000000;
+	color: #cbbe96;
+	flex-grow: 1;
+}
+
+.page > h2 {
+	margin-top: 0;
+	border-bottom: 1px solid #3c3a35;
+	padding: 20px;
 }

@@ -1,18 +1,19 @@
 import { createAction, handleActions } from 'redux-actions';
 
 
-const TEMP_ACTION = 'main/TEMP_ACTION';
+const CHANGE_TAB = 'main/CHANGE_TAB';
 
-export const temp_action = createAction(TEMP_ACTION);
+export const changeTab = createAction(CHANGE_TAB, text => text);
 
 const initialState = {
     app_name: 'LoL DS',
-    app_description: 'League of Legends Damage Simulator'
+    app_description: 'League of Legends Damage Simulator',
+    current_tab: 'intro'
 };
 
 
 export default handleActions({
-    [TEMP_ACTION]: (state, action) => {
-        return state;
+    [CHANGE_TAB]: (state, {payload: text}) => {
+        return {...state, current_tab: text};
     }
 }, initialState);

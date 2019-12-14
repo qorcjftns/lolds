@@ -1,0 +1,13 @@
+
+.Main-page {
+    overflow-y: scroll;
+}
+.Main-page .champions {
+    overflow-y: scroll;
+    height: calc(100% - 88px);
+    width: 100%;
+}
+
+.Main-page .champions img {
+    width: 5%;
+}
