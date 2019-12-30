@@ -39,6 +39,10 @@ class Main extends Component {
         return (
             <div className="page Main-page">
                 <h2>League of Legends Damage Simulator (Main)</h2>
+                <div className="championSelect">
+                    <div className="championSelect-red"></div>
+                    <div className="championSelect-blue"></div>
+                </div>
                 <div className="champions">
                     {this.props.champData}
                 </div>
